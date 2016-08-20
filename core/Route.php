@@ -12,13 +12,7 @@ class Route
 
 	function __construct()
 	{
-
-		if( !isset( $_SERVER[ 'REQUEST_URI' ] ) || $_SERVER[ 'REQUEST_URI' ] == '/' )
-		{
-			$this->_controller = 'Index';
-			$this->_action = 'index';
-		}
-		else
+		if( isset( $_SERVER[ 'REQUEST_URI' ] ) && $_SERVER[ 'REQUEST_URI' ] != '/' )
 		{
 			$pathArr = explode( '/' , trim( $_SERVER[ 'REQUEST_URI' ] , '/' ) );
 
