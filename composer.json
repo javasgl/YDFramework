@@ -1,0 +1,19 @@
+{
+  "name": "YDFreamwork",
+  "description": "php mvc framework",
+  "type": "framework",
+  "keywords": [
+    "php",
+    "mvc",
+    "framework"
+  ],
+  "require": {
+    "filp/whoops": "*"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
