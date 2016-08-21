@@ -9,6 +9,7 @@ class Index extends BaseController
 
 	public function index()
 	{
+		$this->assign( 'test' , ( new Test() )->test() );
 		$this->assign( 'key' , 'this is key value' );
 		$this->display( 'index' );
 	}

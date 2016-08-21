@@ -27,11 +27,18 @@ class Core
 		if( is_file( CORE . "/{$clazz}.php" ) )
 		{
 			require_once( CORE . "/{$clazz}.php" );
-			return true;
 		}
-		else
+		if( is_file( APP . "/{$clazz}.php" ) )
 		{
-			return false;
+			require_once( APP . "/{$clazz}.php" );
+		}
+		if( is_file( CONTROLLER . "/{$clazz}.php" ) )
+		{
+			require_once( CONTROLLER . "/{$clazz}.php" );
+		}
+		if( is_file( MODELS . "/{$clazz}.php" ) )
+		{
+			require_once( MODELS . "/{$clazz}.php" );
 		}
 	}
 }

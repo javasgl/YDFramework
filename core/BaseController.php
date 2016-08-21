@@ -16,10 +16,10 @@ class BaseController
 
 	public function display( $views )
 	{
-		if( is_file( APP . "/views/{$views}.php" ) )
+		if( is_file( VIEWS . "/{$views}.php" ) )
 		{
 			extract( $this->assignData );
-			require_once( APP . "/views/{$views}.php" );
+			require_once( VIEWS . "/{$views}.php" );
 		}
 	}
 }

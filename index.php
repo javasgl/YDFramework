@@ -7,6 +7,9 @@
 define( 'BASE' , dirname( __FILE__ ) );
 define( 'CORE' , BASE . '/core' );
 define( 'APP' , BASE . '/app' );
+define( 'CONTROLLER' , APP . '/controller' );
+define( 'MODELS' , APP . '/models' );
+define( 'VIEWS' , APP . '/views' );
 define( 'DEBUG' , true );
 
 include 'vendor/autoload.php';
